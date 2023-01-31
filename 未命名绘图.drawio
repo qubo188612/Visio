@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-31T01:53:40.639Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="gSNhxlttNDbyUoV66I7p" version="20.8.13" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-31T01:56:56.648Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="ElNQG4ciuB_ufgjmun5n" version="20.8.13" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1380" dy="306" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -56,7 +56,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="YdWkepsm6j2u9YoEMQL1-50" value="P4←P3值为255的像素点的宽度方向膨胀10个像素" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="320" y="380" width="120" height="60" as="geometry" />
+          <mxGeometry x="320" y="370" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="YdWkepsm6j2u9YoEMQL1-74" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YdWkepsm6j2u9YoEMQL1-52" target="YdWkepsm6j2u9YoEMQL1-59">
           <mxGeometry relative="1" as="geometry">
@@ -74,21 +74,27 @@
         </mxCell>
         <mxCell id="YdWkepsm6j2u9YoEMQL1-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YdWkepsm6j2u9YoEMQL1-57">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="245" y="500" as="targetPoint" />
+            <mxPoint x="245" y="480" as="targetPoint" />
             <mxPoint x="330" y="500" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="YdWkepsm6j2u9YoEMQL1-57" value="P5←P1图在P4灰度值为255的位置上逐行归一化" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="335" y="470" width="90" height="60" as="geometry" />
+          <mxGeometry x="335" y="450" width="90" height="60" as="geometry" />
         </mxCell>
         <mxCell id="YdWkepsm6j2u9YoEMQL1-77" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YdWkepsm6j2u9YoEMQL1-59" target="YdWkepsm6j2u9YoEMQL1-76">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="YdWkepsm6j2u9YoEMQL1-59" value="P6←P5灰度值大于c7时灰度值为255，否则灰度值为0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="190" y="520" width="110" height="60" as="geometry" />
+          <mxGeometry x="190" y="500" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-80" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YdWkepsm6j2u9YoEMQL1-76" target="YdWkepsm6j2u9YoEMQL1-79">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="YdWkepsm6j2u9YoEMQL1-76" value="P7←P2和P6图像灰度都为255时,灰度值为255,否则灰度为0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="185" y="620" width="120" height="60" as="geometry" />
+          <mxGeometry x="185" y="580" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-79" value="P8←P7求灰度值为255的点的连通域:两点之间长度距离小于c5的点和宽度距离小于c6的点被归为同一连通域,把连通域长度小于c4的连通域里的点的灰度值设为0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="185" y="660" width="120" height="130" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
