@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-01-31T02:24:09.205Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="dQ4iHnLL6gfL0z77fPvp" version="20.8.13" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-31T02:26:03.932Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="-EIhv1MxNeNiqFBlfd8J" version="20.8.13" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1380" dy="306" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="525" dy="291" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -8,13 +8,18 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="YdWkepsm6j2u9YoEMQL1-0" value="开始" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF9670;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="22.5" y="10" width="70" height="30" as="geometry" />
+          <mxGeometry x="52.5" y="10" width="70" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YdWkepsm6j2u9YoEMQL1-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YdWkepsm6j2u9YoEMQL1-2" target="YdWkepsm6j2u9YoEMQL1-5">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="180" y="145" />
+              <mxPoint x="180" y="40" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="YdWkepsm6j2u9YoEMQL1-2" value="输入:&lt;br&gt;待处理图像:P&lt;br&gt;飞溅过滤开关:c1&lt;br&gt;固定区域开关:c2&lt;br&gt;平均二值阈值:c3&lt;br&gt;激光线长度:c4&lt;br&gt;激光线长连通距离:c5&lt;br&gt;激光线宽连通距离:c6&lt;br&gt;逐行归一化二值阈值:c7" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-30" y="70" width="175" height="150" as="geometry" />
+          <mxGeometry x="2.5" y="70" width="170" height="150" as="geometry" />
         </mxCell>
         <mxCell id="YdWkepsm6j2u9YoEMQL1-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YdWkepsm6j2u9YoEMQL1-5" target="YdWkepsm6j2u9YoEMQL1-38">
           <mxGeometry relative="1" as="geometry" />
