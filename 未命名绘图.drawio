@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-31T03:08:27.732Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="LBRELP_Kcx39jal03kFl" version="20.8.13" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-31T03:12:18.694Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="u68qeQl5zhBP5W7Is2oc" version="20.8.13" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="525" dy="291" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -18,7 +18,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="YdWkepsm6j2u9YoEMQL1-2" value="输入:&lt;br&gt;待处理图像:P&lt;br&gt;飞溅过滤开关:c1&lt;br&gt;固定区域开关:c2&lt;br&gt;平均二值阈值:c3&lt;br&gt;激光线长度:c4&lt;br&gt;激光线长连通距离:c5&lt;br&gt;激光线宽连通距离:c6&lt;br&gt;逐行归一化二值阈值:c7&lt;br&gt;激光线粗细阈值:c8" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-2" value="输入:&lt;br&gt;待处理图像:P&lt;br&gt;飞溅过滤开关:c1&lt;br&gt;固定区域开关:c2&lt;br&gt;平均二值阈值:c3&lt;br&gt;激光线长度限制阈值:c4&lt;br&gt;激光线长连通距离:c5&lt;br&gt;激光线宽连通距离:c6&lt;br&gt;逐行归一化二值阈值:c7&lt;br&gt;激光线粗细阈值:c8" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="2.5" y="70" width="170" height="150" as="geometry" />
         </mxCell>
         <mxCell id="YdWkepsm6j2u9YoEMQL1-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YdWkepsm6j2u9YoEMQL1-5" target="YdWkepsm6j2u9YoEMQL1-38">
@@ -244,11 +244,23 @@
         <mxCell id="YdWkepsm6j2u9YoEMQL1-136" value="结束" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF9670;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="359" y="670" width="70" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-142" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YdWkepsm6j2u9YoEMQL1-138" target="YdWkepsm6j2u9YoEMQL1-141">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="400" y="550" />
+              <mxPoint x="470" y="550" />
+              <mxPoint x="470" y="273" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="YdWkepsm6j2u9YoEMQL1-138" value="P12←P11每行灰度值为255的像素的总数超过c8时,这行所有像素灰度值为0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="340" y="570" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="YdWkepsm6j2u9YoEMQL1-140" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="429" y="826" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-141" value="P13←P12求灰度值为255的点的连通域:两点之间距离c6的点被归为同一连通域,把连通域宽度小于c4的连通域里的点的灰度值设为0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="490" y="215" width="120" height="115" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
