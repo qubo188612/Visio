@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-31T05:07:47.166Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="CP9iz7XxV31P-h4SvQvy" version="20.8.13" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-31T05:29:59.603Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="4omlsvTQlCgrKs1Jsq4O" version="20.8.13" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="600" dy="332" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -311,7 +311,7 @@
         <mxCell id="utUGvmq4-_NXvdLCydQL-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YdWkepsm6j2u9YoEMQL1-157" target="utUGvmq4-_NXvdLCydQL-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="YdWkepsm6j2u9YoEMQL1-157" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;P在t4的检测范围里逐行求灰度质心法&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;,且还要要满足下面条件：&lt;/span&gt;&lt;/div&gt;P点检测位置的像素坐标缩小4倍后在P14中的位置上所对应的像素灰度值为255。&lt;br&gt;&lt;br&gt;L3←P的检测范围里的每一行的检测重心结果的x坐标值放置在L1的数组内存的第x个位置上,&lt;br&gt;L4←L2数组内存的第x个位置的值赋值为1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;align=left;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-157" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;P在t4的检测范围里逐行求灰度质心法&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;,且还要要满足下面条件：&lt;/span&gt;&lt;/div&gt;P点检测位置的像素坐标缩小4倍后在P14中的位置上所对应的像素灰度值为255。&lt;br&gt;&lt;br&gt;L3←P的检测范围里的每一行的检测重心结果的x坐标值放置在L1的数组第x个下标位置上,&lt;br&gt;L4←L2数组第x个下标位置的值赋值为1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;align=left;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="477.5" y="870" width="160" height="195" as="geometry" />
         </mxCell>
         <mxCell id="utUGvmq4-_NXvdLCydQL-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="utUGvmq4-_NXvdLCydQL-1" target="YdWkepsm6j2u9YoEMQL1-157">
@@ -347,11 +347,23 @@
         <mxCell id="utUGvmq4-_NXvdLCydQL-18" value="结束" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF9670;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="695" y="200" width="70" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="utUGvmq4-_NXvdLCydQL-20" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="utUGvmq4-_NXvdLCydQL-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="utUGvmq4-_NXvdLCydQL-20" target="utUGvmq4-_NXvdLCydQL-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="utUGvmq4-_NXvdLCydQL-20" value="t5←在L4数组下标大于等于taily且小于等于heady的范围里,数组值为0的区域" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="670" y="450" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="utUGvmq4-_NXvdLCydQL-22" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="717" y="416" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="utUGvmq4-_NXvdLCydQL-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="utUGvmq4-_NXvdLCydQL-23" target="utUGvmq4-_NXvdLCydQL-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="utUGvmq4-_NXvdLCydQL-23" value="L5←L3在t5的范围里做线性插值" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="680" y="530" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="utUGvmq4-_NXvdLCydQL-25" value="L6←创建一个1×40的数组,把数组前15个元素值设为1,中件10个元素值设为0,后15个元素值设为-1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="660" y="585" width="140" height="75" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
