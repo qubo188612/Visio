@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-31T05:29:59.603Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="4omlsvTQlCgrKs1Jsq4O" version="20.8.13" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-31T05:32:31.683Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="JDO1zX-J35cqi7MMOb0k" version="20.8.13" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="600" dy="332" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -362,8 +362,14 @@
         <mxCell id="utUGvmq4-_NXvdLCydQL-23" value="L5←L3在t5的范围里做线性插值" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="680" y="530" width="100" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="utUGvmq4-_NXvdLCydQL-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="utUGvmq4-_NXvdLCydQL-25" target="utUGvmq4-_NXvdLCydQL-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="utUGvmq4-_NXvdLCydQL-25" value="L6←创建一个1×40的数组,把数组前15个元素值设为1,中件10个元素值设为0,后15个元素值设为-1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="660" y="585" width="140" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="utUGvmq4-_NXvdLCydQL-27" value="L7←L5卷积L6" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="680" y="680" width="100" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
