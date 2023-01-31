@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-01-31T05:32:31.683Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="JDO1zX-J35cqi7MMOb0k" version="20.8.13" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-31T05:45:58.129Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="QJWkbSd5eh9vh9e7Vv2Q" version="20.8.13" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="600" dy="332" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="724" dy="401" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -18,8 +18,8 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="YdWkepsm6j2u9YoEMQL1-2" value="输入:&lt;br&gt;待处理图像:P&lt;br&gt;飞溅过滤开关:c1&lt;br&gt;固定区域开关:c2&lt;br&gt;平均二值阈值:c3&lt;br&gt;激光线长度限制阈值:c4&lt;br&gt;激光线长连通距离:c5&lt;br&gt;激光线宽连通距离:c6&lt;br&gt;逐行归一化二值阈值:c7&lt;br&gt;激光线粗细阈值:c8" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="2.5" y="70" width="170" height="150" as="geometry" />
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-2" value="输入:&lt;br&gt;待处理图像:P&lt;br&gt;飞溅过滤开关:c1&lt;br&gt;固定区域开关:c2&lt;br&gt;平均二值阈值:c3&lt;br&gt;激光线长度限制阈值:c4&lt;br&gt;激光线长连通距离:c5&lt;br&gt;激光线宽连通距离:c6&lt;br&gt;逐行归一化二值阈值:c7&lt;br&gt;激光线粗细阈值:c8&lt;br&gt;侧板直线斜率最小值:c9&lt;br&gt;侧板直线斜率最大值:c10" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="2.5" y="70" width="170" height="180" as="geometry" />
         </mxCell>
         <mxCell id="YdWkepsm6j2u9YoEMQL1-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YdWkepsm6j2u9YoEMQL1-5" target="YdWkepsm6j2u9YoEMQL1-38" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -368,8 +368,14 @@
         <mxCell id="utUGvmq4-_NXvdLCydQL-25" value="L6←创建一个1×40的数组,把数组前15个元素值设为1,中件10个元素值设为0,后15个元素值设为-1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="660" y="585" width="140" height="75" as="geometry" />
         </mxCell>
-        <mxCell id="utUGvmq4-_NXvdLCydQL-27" value="L7←L5卷积L6" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="680" y="680" width="100" height="30" as="geometry" />
+        <mxCell id="utUGvmq4-_NXvdLCydQL-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="utUGvmq4-_NXvdLCydQL-27" target="utUGvmq4-_NXvdLCydQL-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="utUGvmq4-_NXvdLCydQL-27" value="L7←L5数组卷积L6数组" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="665" y="680" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="utUGvmq4-_NXvdLCydQL-30" value="L8←L7数组中值小于c9或者值大于c10,数组值设为0" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="670" y="727" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
