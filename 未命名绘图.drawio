@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-31T03:12:18.694Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="u68qeQl5zhBP5W7Is2oc" version="20.8.13" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-31T03:19:03.132Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="Zb1BG5NcCIVdH5ZYS4Yh" version="20.8.13" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="525" dy="291" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -60,7 +60,7 @@
         <mxCell id="YdWkepsm6j2u9YoEMQL1-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YdWkepsm6j2u9YoEMQL1-50" target="YdWkepsm6j2u9YoEMQL1-57">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="YdWkepsm6j2u9YoEMQL1-50" value="P4←P3值为255的像素点的宽度方向膨胀10个像素" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-50" value="P4←P3值为255的像素点的长度方向膨胀10个像素" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="320" y="370" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="YdWkepsm6j2u9YoEMQL1-74" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YdWkepsm6j2u9YoEMQL1-52" target="YdWkepsm6j2u9YoEMQL1-59">
@@ -229,7 +229,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="YdWkepsm6j2u9YoEMQL1-131" value="P11中的像素&lt;br&gt;灰度值全为0" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-131" value="P11中的像&lt;br&gt;素灰度值是否&lt;br&gt;全为0" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="344" y="810" width="100" height="80" as="geometry" />
         </mxCell>
         <mxCell id="YdWkepsm6j2u9YoEMQL1-137" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YdWkepsm6j2u9YoEMQL1-133" target="YdWkepsm6j2u9YoEMQL1-136">
@@ -259,8 +259,45 @@
         <mxCell id="YdWkepsm6j2u9YoEMQL1-140" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="429" y="826" width="40" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-147" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YdWkepsm6j2u9YoEMQL1-141" target="YdWkepsm6j2u9YoEMQL1-145">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="YdWkepsm6j2u9YoEMQL1-141" value="P13←P12求灰度值为255的点的连通域:两点之间距离c6的点被归为同一连通域,把连通域宽度小于c4的连通域里的点的灰度值设为0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="490" y="215" width="120" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-143" value="P14←P13值为255的像素点的长度方向膨胀2个像素" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="490" y="600" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-149" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YdWkepsm6j2u9YoEMQL1-145" target="YdWkepsm6j2u9YoEMQL1-148">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-153" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=classic;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YdWkepsm6j2u9YoEMQL1-145" target="YdWkepsm6j2u9YoEMQL1-143">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="554" y="640" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="620" y="393" />
+              <mxPoint x="620" y="580" />
+              <mxPoint x="550" y="580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-145" value="P13中的像&lt;br&gt;素灰度值是否&lt;br&gt;全为0" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="500" y="350" width="100" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-152" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YdWkepsm6j2u9YoEMQL1-148" target="YdWkepsm6j2u9YoEMQL1-151">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-148" value="输出:检测失败" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="490" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-150" value="是" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="536" y="425" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-151" value="结束" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF9670;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="515" y="540" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-154" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="585" y="370" width="40" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
