@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-31T02:55:12.656Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="UsU5clGUBXsQNEneqxuU" version="20.8.13" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-31T02:58:55.626Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="CfyBySpnf_f87bfvzv8z" version="20.8.13" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="525" dy="291" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -172,6 +172,9 @@
         <mxCell id="YdWkepsm6j2u9YoEMQL1-106" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;P8中最顶部&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;的连通域&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;是否是&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;P8中&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;最宽的&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;连通域&lt;/span&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;rotation=0;align=center;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="180" y="790" width="130" height="90" as="geometry" />
         </mxCell>
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-126" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YdWkepsm6j2u9YoEMQL1-111" target="YdWkepsm6j2u9YoEMQL1-125">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="YdWkepsm6j2u9YoEMQL1-111" value="输出:检测失败" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="34" y="805" width="120" height="60" as="geometry" />
         </mxCell>
@@ -193,8 +196,17 @@
         <mxCell id="YdWkepsm6j2u9YoEMQL1-118" value="t3←检测范围是left,right,top,deep" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="192.5" y="1000" width="105" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-128" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YdWkepsm6j2u9YoEMQL1-120" target="YdWkepsm6j2u9YoEMQL1-127">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="YdWkepsm6j2u9YoEMQL1-120" value="P9←P1图在t3的检测范围内且在P7灰度值为255的位置上逐行归一化" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="185" y="1060" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-125" value="结束" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF9670;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="59" y="890" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-127" value="P10←P9灰度值大于c7时灰度值为255，否则灰度值为0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="334" y="1065" width="120" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
