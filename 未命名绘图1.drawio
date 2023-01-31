@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-31T07:35:21.190Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="YV27L-pIyF-I84Bcpb_K" version="20.8.13" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-31T07:38:19.465Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="JkJ8PKcuYUIEJ4Y6f9JV" version="20.8.13" type="github">
   <diagram name="第 1 页" id="U26otjXuvCuf7kNrA2Rx">
     <mxGraphModel dx="840" dy="465" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -36,8 +36,8 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="wsKRZQxbZAGPCEgEDLbG-7" value="输入:&lt;br&gt;head,taily,L5,&lt;br&gt;侧板激光线斜率最小值:c9&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;侧板激光线斜率最大值:c10&lt;br&gt;侧板激光线长度最小值:c11&lt;br&gt;侧板激光线最短统计长度:c12&lt;br&gt;底板激光线斜率最小值:c13&lt;br&gt;底板激光线斜率最大值:c14" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
-          <mxGeometry x="5" y="80" width="200" height="120" as="geometry" />
+        <mxCell id="wsKRZQxbZAGPCEgEDLbG-7" value="输入:&lt;br&gt;head,taily,L5,&lt;br&gt;侧板激光线斜率最小值:c9&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;侧板激光线斜率最大值:c10&lt;br&gt;侧板激光线长度最小值:c11&lt;br&gt;侧板激光线最短统计长度:c12&lt;br&gt;底板激光线斜率最小值:c13&lt;br&gt;底板激光线斜率最大值:c14&lt;br&gt;底板激光线长度最小值:c15" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="5" y="80" width="200" height="220" as="geometry" />
         </mxCell>
         <mxCell id="wsKRZQxbZAGPCEgEDLbG-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wsKRZQxbZAGPCEgEDLbG-14" target="wsKRZQxbZAGPCEgEDLbG-16">
           <mxGeometry relative="1" as="geometry" />
@@ -112,6 +112,9 @@
         <mxCell id="wsKRZQxbZAGPCEgEDLbG-38" value="Line1←L9数组在t7的范围里取出数值不为0的元素，分别用这些元素的下标做为x,元素的数值做为y,生成点集,对这些点集做最小二乘法直线拟合出直线" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="225" y="750" width="150" height="90" as="geometry" />
         </mxCell>
+        <mxCell id="wsKRZQxbZAGPCEgEDLbG-65" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" edge="1" parent="1" source="wsKRZQxbZAGPCEgEDLbG-41" target="wsKRZQxbZAGPCEgEDLbG-64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="wsKRZQxbZAGPCEgEDLbG-41" value="t8←大于等于taily1小于等于taily-24的范围" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="240" y="870" width="120" height="60" as="geometry" />
         </mxCell>
@@ -130,6 +133,9 @@
         </mxCell>
         <mxCell id="wsKRZQxbZAGPCEgEDLbG-30" value="taily1←heady1+c12" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="100" y="555" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wsKRZQxbZAGPCEgEDLbG-64" value="L10←L7数组除了在t8范围中元素值小于c13或者值大于c14之外,数组其他的元素值设为0" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="212.5" y="960" width="175" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
