@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-31T10:40:38.672Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="nRgNrqr8hmMiUeTP9inZ" version="20.8.13" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-31T11:04:18.804Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="AtWmWKaveMMOAT2TlDHk" version="20.8.13" type="github">
   <diagram name="第 1 页" id="ky6sXhOoMXjFPSxuL51x">
     <mxGraphModel dx="875" dy="484" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -8,16 +8,128 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="N_SWokO5YmBbSC5TEUTF-1" value="开始步骤4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF9670;" vertex="1" parent="1">
-          <mxGeometry x="70" y="10" width="70" height="30" as="geometry" />
+          <mxGeometry x="77.5" y="10" width="70" height="30" as="geometry" />
         </mxCell>
         <mxCell id="N_SWokO5YmBbSC5TEUTF-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="N_SWokO5YmBbSC5TEUTF-2" target="N_SWokO5YmBbSC5TEUTF-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="N_SWokO5YmBbSC5TEUTF-2" value="输入:&lt;br&gt;Line3,heady1,taily1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
-          <mxGeometry x="5" y="70" width="200" height="160" as="geometry" />
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-2" value="输入:&lt;br&gt;Line3,Line1,&lt;br&gt;heady1,taily1,L9,&lt;br&gt;待处理图像:P&lt;br&gt;底板辅助拟合焊缝最远的限制:c21" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="5" y="70" width="215" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="N_SWokO5YmBbSC5TEUTF-4" target="N_SWokO5YmBbSC5TEUTF-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="N_SWokO5YmBbSC5TEUTF-4" target="N_SWokO5YmBbSC5TEUTF-9">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="N_SWokO5YmBbSC5TEUTF-4" value="判断Line3是否有&lt;br&gt;上次一检测的结果值" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="260" y="40" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="N_SWokO5YmBbSC5TEUTF-6" target="N_SWokO5YmBbSC5TEUTF-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-6" value="Line4←Line3" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="275" y="170" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-8" value="是" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="325" y="132" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="N_SWokO5YmBbSC5TEUTF-9" target="N_SWokO5YmBbSC5TEUTF-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-9" value="输出:检测失败" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-11" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="400" y="60" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-12" value="结束" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF9670;" vertex="1" parent="1">
+          <mxGeometry x="580" y="75" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="N_SWokO5YmBbSC5TEUTF-14" target="N_SWokO5YmBbSC5TEUTF-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-14" value="Point4←求Line4和Line1的交点" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="275" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="N_SWokO5YmBbSC5TEUTF-18" target="N_SWokO5YmBbSC5TEUTF-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="N_SWokO5YmBbSC5TEUTF-18" target="N_SWokO5YmBbSC5TEUTF-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-18" value="判断Point4点&lt;br&gt;是否在P图&lt;br&gt;范围内" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="340" width="130" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="N_SWokO5YmBbSC5TEUTF-20" target="N_SWokO5YmBbSC5TEUTF-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-20" value="输出:检测失败" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="355" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-22" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="246" y="358" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-23" value="结束" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF9670;" vertex="1" parent="1">
+          <mxGeometry x="20" y="370" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="N_SWokO5YmBbSC5TEUTF-28" target="N_SWokO5YmBbSC5TEUTF-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.453;entryY=0.028;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="N_SWokO5YmBbSC5TEUTF-28" target="N_SWokO5YmBbSC5TEUTF-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-28" value="判断t12+c21是否&lt;br&gt;大于taily1" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="460" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="N_SWokO5YmBbSC5TEUTF-30" target="N_SWokO5YmBbSC5TEUTF-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-30" value="heady1←t12+c21" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="275" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-32" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="330" y="530" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="N_SWokO5YmBbSC5TEUTF-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-33" value="heady1=taily1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-35" value="是" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="394" y="470" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="N_SWokO5YmBbSC5TEUTF-36" target="N_SWokO5YmBbSC5TEUTF-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-36" value="t13←大于等于heady1小于等于taily1的范围" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="N_SWokO5YmBbSC5TEUTF-39" target="N_SWokO5YmBbSC5TEUTF-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-39" value="Line5←L9数组在t13的范围里取出数值不为0的元素，分别用这些元素的下标做为x,元素的数值做为y,生成点集,对这些点集做最小二乘法直线拟合出直线" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="345" y="760" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-42" value="Point4←求Line4和Line5的交点" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="870" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="N_SWokO5YmBbSC5TEUTF-44" target="N_SWokO5YmBbSC5TEUTF-28">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="440" />
+              <mxPoint x="335" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-44" value="t12←Point4点的y坐标值" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="355" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-46" value="是" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="389" y="360" width="40" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
