@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-01-31T08:58:38.521Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="61K90LSv_Wm6on_lrjuG" version="20.8.13" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-31T09:38:50.155Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="1o-Pk6MBzpPBipAhATW8" version="20.8.13" type="github">
   <diagram name="第 1 页" id="rETTcwL7LsP54SnjjD1j">
-    <mxGraphModel dx="875" dy="484" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="724" dy="401" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -19,11 +19,26 @@
         <mxCell id="cih99ucHB3GzwZgFhCS5-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cih99ucHB3GzwZgFhCS5-6" target="cih99ucHB3GzwZgFhCS5-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="cih99ucHB3GzwZgFhCS5-6" value="Line1st←Line1直线在P图边界相交的两点中的y值较小的那个点（如果y值相同则取x值较小的点）&lt;br&gt;&lt;br&gt;Line1ed←Line1直线在P图边界相交的两点中的y值较大的那个点（如果y值相同则取x值较大的点）" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="cih99ucHB3GzwZgFhCS5-6" value="Line1st←Line1直线与P图边界相交的两点中的y值较小的那个点（如果y值相同则取x值较小的点）&lt;br&gt;&lt;br&gt;Line1ed←Line1直线与P图边界相交的两点中的y值较大的那个点（如果y值相同则取x值较大的点）" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="240" y="30" width="150" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="cih99ucHB3GzwZgFhCS5-8" value="Line2st←Line2直线在P图边界相交的两点中的y值较小的那个点（如果y值相同则取x值较小的点）&lt;br&gt;&lt;br&gt;Line2ed←Line2直线在P图边界相交的两点中的y值较大的那个点（如果y值相同则取x值较大的点）" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="240" y="190" width="150" height="130" as="geometry" />
+        <mxCell id="cih99ucHB3GzwZgFhCS5-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cih99ucHB3GzwZgFhCS5-8" target="cih99ucHB3GzwZgFhCS5-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cih99ucHB3GzwZgFhCS5-8" value="Line2st←Line2直线与P图边界相交的两点中的y值较小的那个点（如果y值相同则取x值较小的点）&lt;br&gt;&lt;br&gt;Line2ed←Line2直线与P图边界相交的两点中的y值较大的那个点（如果y值相同则取x值较大的点）" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="240" y="180" width="150" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="cih99ucHB3GzwZgFhCS5-11" value="&lt;b&gt;Vline1←&lt;/b&gt;Line1ed-Point1点的向量" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="330" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cih99ucHB3GzwZgFhCS5-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cih99ucHB3GzwZgFhCS5-13" target="cih99ucHB3GzwZgFhCS5-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cih99ucHB3GzwZgFhCS5-13" value="&lt;b&gt;Vline1←&lt;/b&gt;Line1ed-Point1点的向量&lt;br&gt;&lt;b&gt;Vline2&lt;/b&gt;←Line2st-Point1点的向量" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="330" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cih99ucHB3GzwZgFhCS5-14" value="&lt;b&gt;Vline3←&lt;/b&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;Vline1&lt;/b&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;+&lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;b&gt;Vline2&lt;/b&gt;&lt;br&gt;（焊缝法线方向向量）&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="242.5" y="410" width="145" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
