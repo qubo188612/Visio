@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-31T07:48:23.011Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="lPY5nXj1sZBRem-d8vMH" version="20.8.13" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-31T07:54:12.413Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="X7JOuFgt-4KxZ9F5pq-0" version="20.8.13" type="github">
   <diagram name="第 1 页" id="U26otjXuvCuf7kNrA2Rx">
     <mxGraphModel dx="600" dy="332" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -36,7 +36,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="wsKRZQxbZAGPCEgEDLbG-7" value="输入:&lt;br&gt;head,taily,L5,&lt;br&gt;侧板激光线斜率最小值:c9&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;侧板激光线斜率最大值:c10&lt;br&gt;侧板激光线长度最小值:c11&lt;br&gt;侧板激光线最短统计长度:c12&lt;br&gt;底板激光线斜率最小值:c13&lt;br&gt;底板激光线斜率最大值:c14&lt;br&gt;底板激光线长度最小值:c15&lt;br&gt;底板拟合焊缝附近限制:c16" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+        <mxCell id="wsKRZQxbZAGPCEgEDLbG-7" value="输入:&lt;br&gt;head,taily,L5,&lt;br&gt;侧板激光线斜率最小值:c9&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;侧板激光线斜率最大值:c10&lt;br&gt;侧板激光线长度最小值:c11&lt;br&gt;侧板激光线最短统计长度:c12&lt;br&gt;底板激光线斜率最小值:c13&lt;br&gt;底板激光线斜率最大值:c14&lt;br&gt;底板激光线长度最小值:c15&lt;br&gt;底板拟合焊缝最近的限制:c16&lt;br&gt;底板拟合焊缝最远的限制:c17" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
           <mxGeometry x="5" y="80" width="200" height="220" as="geometry" />
         </mxCell>
         <mxCell id="wsKRZQxbZAGPCEgEDLbG-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wsKRZQxbZAGPCEgEDLbG-14" target="wsKRZQxbZAGPCEgEDLbG-16">
@@ -146,8 +146,25 @@
         <mxCell id="wsKRZQxbZAGPCEgEDLbG-67" value="L11←L10数组中只保留下连续大于等于c15个值都不为0的元素,其余都赋值为0" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="240" y="1000" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="wsKRZQxbZAGPCEgEDLbG-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="wsKRZQxbZAGPCEgEDLbG-69" target="wsKRZQxbZAGPCEgEDLbG-73">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="wsKRZQxbZAGPCEgEDLbG-69" value="heady2←L11数组内存中第一个不为0的元素的下标值&lt;br&gt;taily2←L11数组内存中最后一个不为0的元素的下标值" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="222.5" y="1080" width="155" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wsKRZQxbZAGPCEgEDLbG-75" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" edge="1" parent="1" source="wsKRZQxbZAGPCEgEDLbG-73" target="wsKRZQxbZAGPCEgEDLbG-74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wsKRZQxbZAGPCEgEDLbG-73" value="taily2-c16&lt;br&gt;是否小于&lt;br&gt;heady2" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="10" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wsKRZQxbZAGPCEgEDLbG-74" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="113" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wsKRZQxbZAGPCEgEDLbG-76" value="是" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="467" y="79" width="40" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
