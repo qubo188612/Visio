@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-31T03:19:09.616Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="eDEqL8WoahG9jo3gSVmn" version="20.8.13" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-31T03:28:23.336Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="mF3LJmuaB6rwdyTLlpFV" version="20.8.13" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="525" dy="291" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -199,7 +199,7 @@
         <mxCell id="YdWkepsm6j2u9YoEMQL1-128" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YdWkepsm6j2u9YoEMQL1-120" target="YdWkepsm6j2u9YoEMQL1-127">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="YdWkepsm6j2u9YoEMQL1-120" value="P9←P1图在t3的检测范围内且在P7灰度值为255的位置上逐行归一化" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-120" value="P9←P1在t3的检测范围内且在P7灰度值为255的位置上逐行归一化" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="185" y="1060" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="YdWkepsm6j2u9YoEMQL1-125" value="结束" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF9670;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
@@ -265,6 +265,9 @@
         <mxCell id="YdWkepsm6j2u9YoEMQL1-141" value="P13←P12求灰度值为255的点的连通域:两点之间距离c6的点被归为同一连通域,把连通域宽度小于c4的连通域里的点的灰度值设为0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="490" y="215" width="120" height="115" as="geometry" />
         </mxCell>
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-156" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YdWkepsm6j2u9YoEMQL1-143" target="YdWkepsm6j2u9YoEMQL1-155">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="YdWkepsm6j2u9YoEMQL1-143" value="P14←P13值为255的像素点的长度方向膨胀2个像素" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="490" y="600" width="120" height="60" as="geometry" />
         </mxCell>
@@ -298,6 +301,15 @@
         </mxCell>
         <mxCell id="YdWkepsm6j2u9YoEMQL1-154" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="585" y="370" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-158" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YdWkepsm6j2u9YoEMQL1-155" target="YdWkepsm6j2u9YoEMQL1-157">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-155" value="t4←检测范围是left×4,right×4&lt;br&gt;,top×4&lt;br&gt;,deep×4" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="500" y="680" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-157" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;P15←P在t4的检测范围的范围里逐行求灰度质心法&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;,检测范围要满足下面条件：&lt;/span&gt;&lt;/div&gt;P点的像素坐标缩小4倍后在P14中的像素位置的灰度值为255" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="482.5" y="770" width="135" height="110" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
