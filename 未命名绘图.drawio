@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-31T01:28:17.059Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="Y_nmz8CAWCGcOHjONR8E" version="20.8.13" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-31T01:45:42.465Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="4yYueifD7J9ROTKrUSnk" version="20.8.13" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1380" dy="306" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -13,8 +13,8 @@
         <mxCell id="YdWkepsm6j2u9YoEMQL1-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YdWkepsm6j2u9YoEMQL1-2" target="YdWkepsm6j2u9YoEMQL1-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="YdWkepsm6j2u9YoEMQL1-2" value="输入:&lt;br&gt;待处理图像P&lt;br&gt;飞溅过滤开关c1&lt;br&gt;固定区域开关c2&lt;br&gt;平均二值阈值c3&lt;br&gt;激光线长度c4&lt;br&gt;激光线长连通距离c5&lt;br&gt;激光线宽连通距离c6" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-30" y="70" width="175" height="120" as="geometry" />
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-2" value="输入:&lt;br&gt;待处理图像P&lt;br&gt;飞溅过滤开关c1&lt;br&gt;固定区域开关c2&lt;br&gt;平均二值阈值c3&lt;br&gt;激光线长度c4&lt;br&gt;激光线长连通距离c5&lt;br&gt;激光线宽连通距离c6&lt;br&gt;逐行归一化二值阈值c7" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-30" y="70" width="175" height="150" as="geometry" />
         </mxCell>
         <mxCell id="YdWkepsm6j2u9YoEMQL1-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YdWkepsm6j2u9YoEMQL1-5" target="YdWkepsm6j2u9YoEMQL1-38">
           <mxGeometry relative="1" as="geometry" />
@@ -37,6 +37,9 @@
         <mxCell id="YdWkepsm6j2u9YoEMQL1-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YdWkepsm6j2u9YoEMQL1-45" target="YdWkepsm6j2u9YoEMQL1-47">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YdWkepsm6j2u9YoEMQL1-45" target="YdWkepsm6j2u9YoEMQL1-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="YdWkepsm6j2u9YoEMQL1-45" value="c1是否为1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="205" y="242.5" width="80" height="80" as="geometry" />
         </mxCell>
@@ -49,8 +52,37 @@
         <mxCell id="YdWkepsm6j2u9YoEMQL1-49" value="是" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="280" y="250" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="YdWkepsm6j2u9YoEMQL1-50" value="P4←P3对值为255的像素点宽度方向膨胀10个像素" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YdWkepsm6j2u9YoEMQL1-50" target="YdWkepsm6j2u9YoEMQL1-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-50" value="P4←P3值为255的像素点的宽度方向膨胀10个像素" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="320" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-74" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YdWkepsm6j2u9YoEMQL1-52" target="YdWkepsm6j2u9YoEMQL1-59">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="245" y="460" />
+              <mxPoint x="245" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-52" value="P5←P1图逐行归一化" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="202.5" y="360" width="85" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-55" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="205" y="322.5" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YdWkepsm6j2u9YoEMQL1-57">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="245" y="500" as="targetPoint" />
+            <mxPoint x="330" y="500" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-57" value="P5←P1图在P4灰度值为255的位置上逐行归一化" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="335" y="470" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-59" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="190" y="520" width="110" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
