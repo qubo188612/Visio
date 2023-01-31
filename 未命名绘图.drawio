@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-31T05:48:58.782Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="sZ7-xoNf3sc_0ltkzchl" version="20.8.13" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-31T05:52:37.698Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="RF5mfGX_hPoLpOz1dJlg" version="20.8.13" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="724" dy="401" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -18,8 +18,8 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="YdWkepsm6j2u9YoEMQL1-2" value="输入:&lt;br&gt;待处理图像:P&lt;br&gt;飞溅过滤开关:c1&lt;br&gt;固定区域开关:c2&lt;br&gt;平均二值阈值:c3&lt;br&gt;激光线长度限制阈值:c4&lt;br&gt;激光线长连通距离:c5&lt;br&gt;激光线宽连通距离:c6&lt;br&gt;逐行归一化二值阈值:c7&lt;br&gt;激光线粗细阈值:c8&lt;br&gt;侧板直线斜率最小值:c9&lt;br&gt;侧板直线斜率最大值:c10" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="2.5" y="70" width="170" height="180" as="geometry" />
+        <mxCell id="YdWkepsm6j2u9YoEMQL1-2" value="输入:&lt;br&gt;待处理图像:P&lt;br&gt;飞溅过滤开关:c1&lt;br&gt;固定区域开关:c2&lt;br&gt;平均二值阈值:c3&lt;br&gt;激光线长度限制阈值:c4&lt;br&gt;激光线长连通距离:c5&lt;br&gt;激光线宽连通距离:c6&lt;br&gt;逐行归一化二值阈值:c7&lt;br&gt;激光线粗细阈值:c8&lt;br&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="2.5" y="70" width="170" height="160" as="geometry" />
         </mxCell>
         <mxCell id="YdWkepsm6j2u9YoEMQL1-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="YdWkepsm6j2u9YoEMQL1-5" target="YdWkepsm6j2u9YoEMQL1-38" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -367,7 +367,7 @@
         <mxCell id="utUGvmq4-_NXvdLCydQL-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="utUGvmq4-_NXvdLCydQL-32" target="utUGvmq4-_NXvdLCydQL-33">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="utUGvmq4-_NXvdLCydQL-32" value="输出:L5" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="utUGvmq4-_NXvdLCydQL-32" value="输出:L5&lt;br&gt;(激光线轮廓)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="660" y="585" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="utUGvmq4-_NXvdLCydQL-33" value="进入步骤2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF9670;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
