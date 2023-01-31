@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-31T11:04:18.804Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="AtWmWKaveMMOAT2TlDHk" version="20.8.13" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-31T11:12:58.625Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="u1UEAvRz2JEoGQ5b9nRa" version="20.8.13" type="github">
   <diagram name="第 1 页" id="ky6sXhOoMXjFPSxuL51x">
     <mxGraphModel dx="875" dy="484" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -114,7 +114,10 @@
         <mxCell id="N_SWokO5YmBbSC5TEUTF-39" value="Line5←L9数组在t13的范围里取出数值不为0的元素，分别用这些元素的下标做为x,元素的数值做为y,生成点集,对这些点集做最小二乘法直线拟合出直线" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="345" y="760" width="150" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="N_SWokO5YmBbSC5TEUTF-42" value="Point4←求Line4和Line5的交点" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-59" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="N_SWokO5YmBbSC5TEUTF-42" target="N_SWokO5YmBbSC5TEUTF-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-42" value="Point5←求Line4和Line5的交点&lt;br&gt;(焊缝坐标)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="360" y="870" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="N_SWokO5YmBbSC5TEUTF-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="N_SWokO5YmBbSC5TEUTF-44" target="N_SWokO5YmBbSC5TEUTF-28">
@@ -130,6 +133,68 @@
         </mxCell>
         <mxCell id="N_SWokO5YmBbSC5TEUTF-46" value="是" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="389" y="360" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="N_SWokO5YmBbSC5TEUTF-48" target="N_SWokO5YmBbSC5TEUTF-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-48" value="&lt;b&gt;Vline6←&lt;/b&gt;Line4st-Point5点的向量&lt;br&gt;&lt;b&gt;Vline7&lt;/b&gt;←Line5st-Point5点的向量" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="295" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.002;entryY=0.456;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="N_SWokO5YmBbSC5TEUTF-49" target="N_SWokO5YmBbSC5TEUTF-51">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="1025" />
+              <mxPoint x="600" y="199" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-49" value="Line4st←Line4直线与P图边界相交的两点中的y值较小的那个点（如果y值相同则取x值较小的点）&lt;br&gt;&lt;br&gt;Line4ed←Line4直线与P图边界相交的两点中的y值较大的那个点（如果y值相同则取x值较大的点）" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="345" y="960" width="150" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="N_SWokO5YmBbSC5TEUTF-51" target="N_SWokO5YmBbSC5TEUTF-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-51" value="Line5st←Line5直线与P图边界相交的两点中的y值较小的那个点（如果y值相同则取x值较小的点）&lt;br&gt;&lt;br&gt;Line5ed←Line5直线与P图边界相交的两点中的y值较大的那个点（如果y值相同则取x值较大的点）" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="640" y="140" width="150" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-69" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="N_SWokO5YmBbSC5TEUTF-54" target="N_SWokO5YmBbSC5TEUTF-67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-54" value="&lt;b&gt;Vline8←&lt;/b&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;Vline6&lt;/b&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;+&lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;b&gt;Vline7&lt;/b&gt;&lt;br&gt;（焊缝法线方向向量）&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="642.5" y="375" width="145" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="N_SWokO5YmBbSC5TEUTF-58" target="N_SWokO5YmBbSC5TEUTF-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-63" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="N_SWokO5YmBbSC5TEUTF-58" target="N_SWokO5YmBbSC5TEUTF-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-58" value="判断Point5点&lt;br&gt;是否在P图&lt;br&gt;范围内" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="855" width="130" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-61" value="是" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="235" y="940" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="N_SWokO5YmBbSC5TEUTF-62" target="N_SWokO5YmBbSC5TEUTF-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-62" value="输出:检测失败" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="870" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-64" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="157" y="875" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-65" value="结束" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF9670;" vertex="1" parent="1">
+          <mxGeometry x="65" y="960" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-70" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="N_SWokO5YmBbSC5TEUTF-67" target="N_SWokO5YmBbSC5TEUTF-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-67" value="检测成功输出:&lt;br&gt;焊缝点:Point5&lt;br&gt;焊缝法向量:&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;Vline8&lt;/b&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="630" y="460" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="N_SWokO5YmBbSC5TEUTF-68" value="成功结束" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#73ff70;" vertex="1" parent="1">
+          <mxGeometry x="680" y="570" width="70" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
