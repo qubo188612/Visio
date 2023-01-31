@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-31T10:05:04.377Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="naeuAu1vbUhNTaY1fV5b" version="20.8.13" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-31T10:26:15.926Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.70" etag="9LrnctmbESTz9ILJWB9a" version="20.8.13" type="github">
   <diagram name="第 1 页" id="rETTcwL7LsP54SnjjD1j">
     <mxGraphModel dx="724" dy="401" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -13,7 +13,7 @@
         <mxCell id="cih99ucHB3GzwZgFhCS5-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.001;entryY=0.343;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="cih99ucHB3GzwZgFhCS5-2" target="cih99ucHB3GzwZgFhCS5-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="cih99ucHB3GzwZgFhCS5-2" value="输入:&lt;br&gt;Line1,Line2,heady1,taily1,&lt;br&gt;heady2,taily2,Point1&lt;br&gt;待处理图像:P" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+        <mxCell id="cih99ucHB3GzwZgFhCS5-2" value="输入:&lt;br&gt;Line1,Line2,heady1,taily1,&lt;br&gt;heady2,taily2,Point1&lt;br&gt;待处理图像:P&lt;br&gt;断线判定阈值:c19" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
           <mxGeometry x="5" y="80" width="200" height="160" as="geometry" />
         </mxCell>
         <mxCell id="cih99ucHB3GzwZgFhCS5-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cih99ucHB3GzwZgFhCS5-6" target="cih99ucHB3GzwZgFhCS5-8">
@@ -67,8 +67,94 @@
         <mxCell id="cih99ucHB3GzwZgFhCS5-23" value="t11←从P15图Point1点坐标出发沿着向量&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;Vline4&lt;/b&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;方向遍历,当遍历到3个以上灰度值小于c19像素的点时,则停止遍历,并返回最后一个灰度值大于等于c19的像素点坐标的y值(如果不存在则返回Point1点坐标的y值)&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="238.13" y="720" width="153.75" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="cih99ucHB3GzwZgFhCS5-25" value="Point3←直线Line1在P15图中第t11行的点" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="cih99ucHB3GzwZgFhCS5-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cih99ucHB3GzwZgFhCS5-25" target="cih99ucHB3GzwZgFhCS5-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cih99ucHB3GzwZgFhCS5-25" value="Point2←直线Line1在y等于t11时的点" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="255" y="870" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cih99ucHB3GzwZgFhCS5-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cih99ucHB3GzwZgFhCS5-27" target="cih99ucHB3GzwZgFhCS5-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cih99ucHB3GzwZgFhCS5-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cih99ucHB3GzwZgFhCS5-27" target="cih99ucHB3GzwZgFhCS5-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cih99ucHB3GzwZgFhCS5-27" value="判断Point2点&lt;br&gt;是否在P15图&lt;br&gt;范围内" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="940" width="130" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="cih99ucHB3GzwZgFhCS5-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cih99ucHB3GzwZgFhCS5-29" target="cih99ucHB3GzwZgFhCS5-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cih99ucHB3GzwZgFhCS5-29" value="输出:检测失败" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="955" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cih99ucHB3GzwZgFhCS5-31" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="228" y="959" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cih99ucHB3GzwZgFhCS5-32" value="结束" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF9670;" vertex="1" parent="1">
+          <mxGeometry x="5" y="970" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cih99ucHB3GzwZgFhCS5-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="cih99ucHB3GzwZgFhCS5-34" target="cih99ucHB3GzwZgFhCS5-39">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="74.99999999999994" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cih99ucHB3GzwZgFhCS5-34" value="&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;Vline5←&lt;/b&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;Point1点-Point2点的向量&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="252.5" y="1060" width="125" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cih99ucHB3GzwZgFhCS5-36" value="是" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="305" y="1018" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cih99ucHB3GzwZgFhCS5-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cih99ucHB3GzwZgFhCS5-39" target="cih99ucHB3GzwZgFhCS5-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cih99ucHB3GzwZgFhCS5-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cih99ucHB3GzwZgFhCS5-39" target="cih99ucHB3GzwZgFhCS5-43">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="721" y="130" />
+              <mxPoint x="721" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cih99ucHB3GzwZgFhCS5-39" value="从P15图的Point2点坐标出&lt;br&gt;发,沿着向量&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;Vline5&lt;/b&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;方向&lt;br&gt;遍历到终点&lt;/span&gt;Point1点,查看途中&lt;br&gt;是否有灰度值小于c19的点" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="40" width="210" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="cih99ucHB3GzwZgFhCS5-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cih99ucHB3GzwZgFhCS5-40" target="cih99ucHB3GzwZgFhCS5-54">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="565" y="370" />
+              <mxPoint x="615" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cih99ucHB3GzwZgFhCS5-40" value="Point3←Point1&lt;br&gt;（焊缝点）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="505" y="250" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cih99ucHB3GzwZgFhCS5-42" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="555" y="211" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cih99ucHB3GzwZgFhCS5-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cih99ucHB3GzwZgFhCS5-43" target="cih99ucHB3GzwZgFhCS5-54">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="370" />
+              <mxPoint x="615" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cih99ucHB3GzwZgFhCS5-43" value="Point3←P15图的Point2点坐标出发,沿着向量&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;Vline5&lt;/b&gt;方向遍历到终点Point1点,途中遇到的第一个灰度值小于c19的点" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="250" width="161" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="cih99ucHB3GzwZgFhCS5-45" value="是" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="660" y="100" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cih99ucHB3GzwZgFhCS5-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cih99ucHB3GzwZgFhCS5-54" target="cih99ucHB3GzwZgFhCS5-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cih99ucHB3GzwZgFhCS5-54" value="输出:&lt;br&gt;焊缝点:Point3&lt;br&gt;焊缝法向量:&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;Vline3&lt;/b&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="400" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cih99ucHB3GzwZgFhCS5-57" value="结束" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF9670;" vertex="1" parent="1">
+          <mxGeometry x="580" y="510" width="70" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
