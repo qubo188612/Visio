@@ -4,8 +4,147 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="NxNXK_XppXZSCVkCyjR1-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="150" width="120" height="60" as="geometry" />
+        <mxCell id="jCrQCMFxg4N28neEWhqv-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="NxNXK_XppXZSCVkCyjR1-1" target="jCrQCMFxg4N28neEWhqv-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NxNXK_XppXZSCVkCyjR1-1" value="相机采图" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="760" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.427;entryY=-0.006;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="jCrQCMFxg4N28neEWhqv-1" target="jCrQCMFxg4N28neEWhqv-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jCrQCMFxg4N28neEWhqv-1" target="jCrQCMFxg4N28neEWhqv-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jCrQCMFxg4N28neEWhqv-1" target="jCrQCMFxg4N28neEWhqv-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-1" value="qt当前软件" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="500" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jCrQCMFxg4N28neEWhqv-2" target="jCrQCMFxg4N28neEWhqv-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jCrQCMFxg4N28neEWhqv-2" target="jCrQCMFxg4N28neEWhqv-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jCrQCMFxg4N28neEWhqv-2" target="jCrQCMFxg4N28neEWhqv-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-2" value="新框架" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="120" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="jCrQCMFxg4N28neEWhqv-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="375" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-3" value="轴移动插件" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="320" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jCrQCMFxg4N28neEWhqv-4" target="jCrQCMFxg4N28neEWhqv-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="525" y="470" />
+              <mxPoint x="375" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-4" value="物镜转换插件" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="320" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jCrQCMFxg4N28neEWhqv-5" target="jCrQCMFxg4N28neEWhqv-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="215" y="470" />
+              <mxPoint x="375" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-5" value="相机插件" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="320" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-12" value="插件调用" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="220" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-13" value="插件调用" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="150" y="220" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-16" value="插件调用" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="220" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-19" value="指令发送" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="210" y="390" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-23" value="指令发送" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="390" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-24" value="指令发送" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="470" y="390" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jCrQCMFxg4N28neEWhqv-25" target="NxNXK_XppXZSCVkCyjR1-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-25" value="相机官方SDK" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="590" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-26" value="ACS官方SDK" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="590" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jCrQCMFxg4N28neEWhqv-27" target="jCrQCMFxg4N28neEWhqv-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-27" value="物镜转换器官方SDK" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="590" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-31" value="指令发送" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="530" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-32" value="指令发送" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="384" y="560" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-33" value="指令发送" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="530" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jCrQCMFxg4N28neEWhqv-37" target="jCrQCMFxg4N28neEWhqv-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="jCrQCMFxg4N28neEWhqv-37" target="jCrQCMFxg4N28neEWhqv-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-37" value="轴移动" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="760" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jCrQCMFxg4N28neEWhqv-38" target="jCrQCMFxg4N28neEWhqv-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jCrQCMFxg4N28neEWhqv-38" target="jCrQCMFxg4N28neEWhqv-45">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="545" y="880" />
+              <mxPoint x="389" y="880" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jCrQCMFxg4N28neEWhqv-38" target="jCrQCMFxg4N28neEWhqv-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-38" value="物镜转换" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="760" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.415;entryY=0.072;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="jCrQCMFxg4N28neEWhqv-26" target="jCrQCMFxg4N28neEWhqv-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-41" value="对焦" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="940" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-45" value="扫描" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="334" y="940" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jCrQCMFxg4N28neEWhqv-48" value="检测" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="940" width="110" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
